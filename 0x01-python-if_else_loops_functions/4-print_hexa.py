@@ -1,4 +1,4 @@
+#!/usr/bin/python3
 for i in range(0, 99):
-    hex_no = hex(i)
-    for n in (hex_no):
-        print("{} = {}".format(i, n))
+    hex_str = str(hex(i))
+    print("{} = {}".format(i, hex_str))
