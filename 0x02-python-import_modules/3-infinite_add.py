@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def add_arg(argv):
-    length = len(arg) - 1
+    length = len(argv) - 1
     if length == 0:
         print("{}".format(length))
         return
