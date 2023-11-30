@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
+    add_arg(sys.argv)
+
+def add_arg(argv):
     arg = sys.argv
     length = len(arg) - 1
     add = 0
