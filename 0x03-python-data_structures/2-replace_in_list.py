@@ -1,3 +1,8 @@
 #!/usr/bin/python3
 def replace_in_list(my_list, idx, element):
-    if idx < 0 or idx >
+    length = len(my_list)
+    if idx < 0 or idx >= length:
+        print(my_list)
+    else:
+        my_list.insert(idx, element)
+        print(my_list)
