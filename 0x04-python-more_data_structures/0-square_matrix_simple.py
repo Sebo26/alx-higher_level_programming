@@ -1,5 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    map(sqr_root, matrix)
     def sqr_root(num):
-        return num ** num
+        return num ** 2
+    result = list(map(lambda row: list(map(sqr_root, row)), matrix))
+    return result
