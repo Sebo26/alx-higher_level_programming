@@ -2,10 +2,19 @@
 def roman_to_int(roman_string):
     if not roman_string:
         return (0)
-    if M == 1 000:
-        add if D == 500:
-            add if C == 100:
-                add if L == 50:
-                    add if X == 10:
-                        add if V == 5:
-                            if I, II, III, IV is range(0, 5)
+
+    roman_numerals = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    total = 0
+    prev_value = 0
+
+    for numeral in reversed(roman_string):
+        value = roman_numerals.get(numeral, 0)
+
+        if value < prev_value:
+            total -= value
+        else:
+            total += value
+
+        prev_value = value
+
+    return (total)
