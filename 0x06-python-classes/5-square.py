@@ -33,7 +33,7 @@ class Square:
         if size = 0:
             print(\n)
         else:
-            for _ in range(self.__size):
-                for _ in range(self.__size):
+            for m in range(self.__size):
+                for n in range(self.__size):
                     print("#", end="")
                 print()
