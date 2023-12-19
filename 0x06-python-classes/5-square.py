@@ -33,7 +33,7 @@ class Square:
         if size = 0:
             print(\n)
         else:
-            while(size):
+            while(self.__size):
                 print("#")
-                while(size):
+                while(self.__size):
                     print("#")
