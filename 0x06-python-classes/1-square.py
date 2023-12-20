@@ -11,5 +11,6 @@ class Square:
 
 
         Args:
-            size (int): dimension of new square"""
+            size (int): dimension of new square
+        """
         self.__size = size
