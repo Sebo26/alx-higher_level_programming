@@ -7,5 +7,9 @@ class Square:
     """The square class"""
     pass
     def __init__(self, size):
-        """initializing new square with attribute size"""
+        """initializing new square with attribute size
+
+
+        Args:
+            size (int): dimension of new square"""
         self.__size = size
