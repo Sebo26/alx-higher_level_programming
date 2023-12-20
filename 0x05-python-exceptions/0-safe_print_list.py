@@ -6,7 +6,6 @@ def safe_print_list(my_list=[], x=0):
             print("{}".format(my_list[numbers], end=" "))
             count = count + 1
     except IndexError:
-        if x < 0 or x > count:
-            print("Index doesn't exist")
-    print("\n")
+        pass 
+    print("")
     return count
