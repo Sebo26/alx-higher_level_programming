@@ -42,7 +42,7 @@ def __init__(self, width=0, height=0):
         return int(self.__width) * int(self.__height)
 
     def perimeter(self):
-        if width or height is 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         else:
             return ((2 * int(self.__width)) + (2 * int(self.__height)))
