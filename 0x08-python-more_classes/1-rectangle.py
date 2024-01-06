@@ -16,7 +16,7 @@ def __init__(self, width=0, height=0):
         height (int): height of rectangle
     """
     self.width = width
-    self.width = height
+    self.height = height
 
     @property
     def width(self):
