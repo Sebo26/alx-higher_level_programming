@@ -7,16 +7,16 @@ class Rectangle:
     """The rectangle class"""
     pass
 
-def __init__(self, width=0, height=0):
-    """Initializing width and height
-    
+    def __init__(self, width=0, height=0):
+        """Initializing width and height
 
-    Args:
+
+        Args:
         width (int): Width of rectangle
         height (int): height of rectangle
-    """
-    self.width = width
-    self.height = height
+        """
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
