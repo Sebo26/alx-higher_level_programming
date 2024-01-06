@@ -8,13 +8,19 @@ class Rectangle:
     pass
 
 def __init__(self, width=0, height=0):
-    """Initializing width and height"""
-    self.__width = width
-    self.__width = height
+    """Initializing width and height
+    
+
+    Args:
+        width (int): Width of rectangle
+        height (int): height of rectangle
+    """
+    self.width = width
+    self.width = height
 
     @property
     def width(self):
-        return int(self.__width)
+        return (self.__width)
 
     @width.setter
     def width(self, value):
@@ -27,7 +33,7 @@ def __init__(self, width=0, height=0):
 
     @property
     def height(self):
-        return int(self.__length)
+        return (self.__height)
 
     @height.setter
     def height(self, value):
