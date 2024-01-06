@@ -61,5 +61,5 @@ class Rectangle:
         return "Rectangle(" + width_rect + ", " + height_rect + ")"
 
     def __del__(self):
-        print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+        print("Bye rectangle...")
