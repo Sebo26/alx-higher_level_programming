@@ -1,0 +1,12 @@
+import unittest
+import add_integer
+
+Class TestAdd(unittest.TestCase):
+    def test_add(self):
+    self.assertEqual(add.add(1, 2), 3)
+    self.assertEqual(add.add(100, -2), 98)
+    self.assertEqual(add.add(2), 100)
+    self.assertEqual(add.add(100.3, -2), 98)
+
+if __name__ == '__main__':
+    unittest.main()
