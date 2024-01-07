@@ -1,0 +1,14 @@
+import unittest
+from 3-say_my_name import say_my_name
+
+class TestSayMyName(unittest.TestCase):
+	def test_name(self):
+		self.assertEqual(say_my_name("John", "Smith"), "My name is John Smith")
+		self.assertEqual(say_my_name("Walter", "White"), "My name is Walter White")
+		self.assertEqual(say_my_name("Bob"), "My name is Bob")
+
+	def test_value(self):
+		self.assertRaises(TypeError, say_my_name, 12, White)
+
+if __name__ == '__main__':
+	unittest.main()
