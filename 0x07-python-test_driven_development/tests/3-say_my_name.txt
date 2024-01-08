@@ -1,5 +1,5 @@
 import unittest
-from 3-say_my_name import say_my_name
+from say_my_name import say_my_name
 
 class TestSayMyName(unittest.TestCase):
 	def test_name(self):
