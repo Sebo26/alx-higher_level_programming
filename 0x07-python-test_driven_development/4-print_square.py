@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def print_square(size):
     if size not in [int]:
         raise TypeError("size must be an integer")

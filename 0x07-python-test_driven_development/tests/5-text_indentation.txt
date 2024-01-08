@@ -1,5 +1,5 @@
 import unittest
-from 5-text_indentation import text_indentation
+from text_indentation import text_indentation
 
 class TestTextIndentation(unittest.Testcase):
 	def test_text_indentation(self):
