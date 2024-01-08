@@ -2,5 +2,5 @@ def text_indentation(text):
     if text in ['.', '?', ':']:
         print('\n')
         print('\n')
-    if text not in [str]:
+    elif not isinstance(text, str):
         raise TypeError("text must be a string")

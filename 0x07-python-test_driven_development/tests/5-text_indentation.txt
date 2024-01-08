@@ -1,0 +1,14 @@
+import unittest
+from 5-text_indentation import text_indentation
+
+class TestTextIndentation(unittest.Testcase):
+	def test_text_indentation(self):
+		self.assertTrue(text_indentation('.'))
+		self.assertTrue(text_indentation('?'))
+		self.assertTrue(text_indentation(':'))
+
+	def text_value(self):
+		self.assertRaises(TypeError, text_indentation, 2)
+
+if __name__ == '__main__':
+	unittest.main()
