@@ -2,8 +2,8 @@
 """Class student that defines students"""
 
 
-class Students:
-    """This class represents a students"""
+class Student:
+    """This class represents a student"""
 
     def __init__(self, first_name, last_name, age):
         """Sudents are define by names and age"""
