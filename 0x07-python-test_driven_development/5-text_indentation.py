@@ -4,8 +4,10 @@
 
 def text_indentation(text):
     """prints two lines after '.', '?', ':'"""
-    if text in ['.', '?', ':']:
+    if any(char in text for char in ['.', '?', ':']):
         print('\n')
         print('\n')
     elif not isinstance(text, str):
         raise TypeError("text must be a string")
+    else:
+        print(text)
