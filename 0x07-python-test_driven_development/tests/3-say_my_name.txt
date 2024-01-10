@@ -9,6 +9,3 @@ class TestSayMyName(unittest.TestCase):
 
 	def test_value(self):
 		self.assertRaises(TypeError, say_my_name, 12, White)
-
-if __name__ == '__main__':
-	unittest.main()
