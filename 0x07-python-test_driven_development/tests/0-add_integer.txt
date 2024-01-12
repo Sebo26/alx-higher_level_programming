@@ -1,26 +1,20 @@
-import unittest
-from 0-add_integer import add_integer
+def add_integer(a, b=98):
+	"""Return the sum of a and b.
 
-class TestAdd(unittest.TestCase):
-	def test_add(self):
-		print(add_integer(1, 2))
-		self.assertEqual(add_integer(1, 2), 3)
+	>>> add_integer(1, 2)
+	3
+	>>> add_integer(100, -2)
+	98
+	>>> add_integer(2)
+	100
+	>>> add_integer(100.3, -2)
+	98
 
-		print(add_integer(100, -2))
-		self.assertEqual(add_integer(100, -2), 98)
+	>>> add_integer(4, "school") # doctest: +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+	TypeError: a must be an integer
 
-		print(add_integer(2))
-		self.assertEqual(add_integer(2), 100)
-
-		print(add_integer(100.3, -2))
-		self.assertEqual(add_integer(100.3, -2), 98)
-
-	def test_values(self):
-		print(add_integer(4, "school"))
-		self.assertRaises(TypeError, add_integer, 4, "school")
-
-		print(add_integer(None))
-		self.assertRaises(TypeError, add_integer, None)
-
-if __name__ == '__main__':
-    unittest.main()
+	>>> add_integer(None) # doctest: +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+	"""
