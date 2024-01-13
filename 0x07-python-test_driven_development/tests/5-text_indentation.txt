@@ -1,14 +1,16 @@
-import unittest
-from 5-text_indentation import text_indentation
-
-class TestTextIndentation(unittest.Testcase):
-	def test_text_indentation(self):
-		self.assertTrue(text_indentation('.'))
-		self.assertTrue(text_indentation('?'))
-		self.assertTrue(text_indentation(':'))
-
-	def text_value(self):
-		self.assertRaises(TypeError, text_indentation, 2)
-
-if __name__ == '__main__':
-	unittest.main()
+def text_indentation(text):
+	""" The function adds two lines after '.', '?', ':'
+	
+	>>> text_indentation(.)
+	
+	
+	>>> text_indentation(?)
+	
+	
+	>>> text_indentation(:)
+	
+	
+	>>> text_indentation(2) # doctest: +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+	TypeError: text must be a special character
+	"""
