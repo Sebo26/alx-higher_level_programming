@@ -1,11 +1,14 @@
-import unittest
-from 3-say_my_name import say_my_name
-
-class TestSayMyName(unittest.TestCase):
-	def test_name(self):
-		self.assertEqual(say_my_name("John", "Smith"), "My name is John Smith")
-		self.assertEqual(say_my_name("Walter", "White"), "My name is Walter White")
-		self.assertEqual(say_my_name("Bob"), "My name is Bob")
-
-	def test_value(self):
-		self.assertRaises(TypeError, say_my_name, 12, White)
+def say_my_name(first_name, last_name=""):
+	"""The function prints the first and last name into a string
+	
+	>>> say_my_name("John", "Smith")
+	"My name is John Smith"
+	>>> say_my_name("Walter", "White")
+	"My name is Walter White"
+	>>> say_my_name("Bob")
+	"My name is Bob"
+	
+	>>> say_my_name(12, "White")  # doctest: +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+	TypeError: first name must be a string
+	"""
