@@ -1,16 +1,13 @@
-import unittest
-from 4-print_square import print_square
-
-class TestPrintSquare(unittest.Testcase):
-	def test_square_print(self):
-		self.assertEqual(print_square(4))
-		self.assertEqual(print_square(10))
-		self.assertEqual(print_square(0))
-		self.assertEqual(print_square(1))
-
-	def test_value(self):
-		self.assertRaises(ValueError, print_square, -1)
-		self.assertRaises(TypeError, print_square, 1.5)
-
-if __name__ == '__main__':
-	unittest.main()
+def print_square(size):
+	"""The function prints squares made of # characters
+	
+	>>> print_square(4)
+	####
+	####
+	####
+	####
+	
+	>>> print_square(-1) # doctest: +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+	ValueError: size must be a integer
+	"""
