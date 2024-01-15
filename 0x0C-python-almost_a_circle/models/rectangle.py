@@ -86,10 +86,11 @@ class Rectangle(Base):
                 print('#', end='')
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Updates attributes of class Rectangle"""
         if len(args) == 5:
-            self.id, self.width, self.height, self.x, self.y = args
+            self.id, self.width, self.height, self.x, self.y
+            pass
         else:
             print("Arguments are not 5")
 
