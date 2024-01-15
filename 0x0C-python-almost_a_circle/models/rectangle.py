@@ -8,7 +8,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Create the private instance attributes and getters/setters"""
-        self.width = __width
+        self.width = width
         self.height = height
         self.x = x
         self.y = y
