@@ -8,11 +8,11 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Create the private instance attributes and getters/setters"""
-        super().__init__(id)
         self.width = __width
         self.height = height
         self.x = x
         self.y = y
+        super().__init__(id)
 
     @property
     def width(self):
