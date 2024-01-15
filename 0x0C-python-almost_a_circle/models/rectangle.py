@@ -16,12 +16,11 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Return getter for width"""
+        """Return getter and sets properties for width"""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Sets properties for value of width"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value = 0 or value < 0:
@@ -31,12 +30,11 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """Return getter for height"""
+        """Return getter and sets properties for height"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Sets properties for the value of height"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value = 0 or value < 0:
@@ -46,12 +44,11 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """Return getter for x"""
+        """Return getter and sets properties for x"""
         return self.__x
 
     @x.setter
     def x(self, value):
-        """Sets properties for the value of x"""
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         elif value < 0:
@@ -61,12 +58,11 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """Return getter for y"""
+        """Return getter and sets properties for y"""
         return self.__y
 
     @y.setter
     def y(self, value):
-        """Sets properties for the value of y"""
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         elif value < 0:
