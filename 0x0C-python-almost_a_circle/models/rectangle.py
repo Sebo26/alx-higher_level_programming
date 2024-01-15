@@ -86,6 +86,10 @@ class Rectangle(Base):
                 print('#', end='')
             print()
 
+    def update(self, *args):
+        if len(args) == 5:
+            self.id, self.width, self.height, self.x, self.y
+
     def __str__(self):
         """Return a string stating values of rectangles"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
