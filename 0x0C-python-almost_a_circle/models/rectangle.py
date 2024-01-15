@@ -76,7 +76,12 @@ class Rectangle(Base):
 
     def display(self):
         """Prints the rectangle according to height and width, made of '#'"""
+        for m in range(self.y):
+            print()
+
         for i in range(self.height):
+            for n in range(self.x):
+                print(" ")
             for j in range(self.width):
                 print('#', end='')
             print()
