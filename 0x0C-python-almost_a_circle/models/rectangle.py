@@ -89,7 +89,7 @@ class Rectangle(Base):
     def update(self, *args):
         """Updates attributes of class Rectangle"""
         if len(args) == 5:
-            args = self.id, self.width, self.height, self.x, self.y
+            self.id, self.width, self.height, self.x, self.y = args
 
     def __str__(self):
         """Return a string stating values of rectangles"""
