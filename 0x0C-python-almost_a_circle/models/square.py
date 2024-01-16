@@ -28,6 +28,11 @@ class Square(Rectangle):
         else:
             print("Arguments are not 5")
 
+    def to_dictionary(self):
+        """returns the dictionary representation of a Square"""
+        rec_dictionary = {"id": self.id, "size": self.size, "x": self.x, "y": self.y}
+        return rec_dictionary
+
     def __str__(self):
         """Return a string stating values of square"""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
