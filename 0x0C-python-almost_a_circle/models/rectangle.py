@@ -94,6 +94,11 @@ class Rectangle(Base):
         else:
             print("Arguments are not 5")
 
+    def to_dictionary(self):
+        """returns the dictionary representation of a Rectangle"""
+        rec_dictionary = {"id": self.id, "width": self.width, "height": self.height, "x": x, "y": y}
+        return rec_dictionary
+
     def __str__(self):
         """Return a string stating values of rectangles"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
