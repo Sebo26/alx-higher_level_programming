@@ -20,6 +20,14 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
+    def update(self, *args, **kwargs):
+        """Updates attributes of class Rectangle"""
+        if len(args) == 4:
+            self.id, self.size self.x, self.y
+            pass
+        else:
+            print("Arguments are not 5")
+
     def __str__(self):
         """Return a string stating values of square"""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
