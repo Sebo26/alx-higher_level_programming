@@ -14,3 +14,8 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def save_to_file(cls, list_objs):
+	filename = f"{cls.__name__}.json"
+        with open(filename, mode="w") as filename2:
+	json.dump(list_objs, filename2)
