@@ -1,4 +1,4 @@
 -- Creates the table unique_id
 CREATE TABLE unique_id (
-	id INT UNIQUE,
+	id INT DEFAULT 1 UNIQUE,
 	name VARCHAR(256));
