@@ -1,6 +1,6 @@
-const BaseSquare = require('./5-Square');
+const SquareP = require('./5-Square');
 
-class Square extends BaseSquare {
+class Square extends SquareP {
   charPrint (c) {
     if (c === undefined) {
       c = 'X';
