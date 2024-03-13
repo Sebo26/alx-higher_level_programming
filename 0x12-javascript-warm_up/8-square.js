@@ -2,7 +2,7 @@
 let i = process.argv[2];
 let j;
 let k;
-if (parseInt(process.argv[2] === undefined) {
+if (parseInt(process.argv[2] === undefined)) {
   console.log('Missing size');
 } else {
     for (j = 0; j < i; j++) {
