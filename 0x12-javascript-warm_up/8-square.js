@@ -7,7 +7,7 @@ if (process.argv[2] === undefined) {
 } else {
   for (j = 0; j < i; j++) {
     let row = '';
-    for (k = 0; k < i; k++) {
+    for (k = 0; k < i - 1; k++) {
       row += 'X';
     }
     console.log(row);
