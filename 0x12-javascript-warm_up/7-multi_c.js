@@ -6,7 +6,7 @@ if (i === undefined) {
 } else if (i <= 0) {
   return;
 } else {
-  for (j = 0; j < 1; j++) {
-  console.log('C is fun');
-}
+    for (j = 0; j < i; j++) {
+      console.log('C is fun');
+    }
 }
