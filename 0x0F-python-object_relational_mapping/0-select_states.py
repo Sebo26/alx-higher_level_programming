@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Uses database hbtn_0e_0_usato list states"""
 
 
