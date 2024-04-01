@@ -4,6 +4,3 @@ import sys
 URL = None
 with urllib.request.urlopen(URL) as response:
     print(response.headers.get('X-Request-Id'))
-
-if __name__ == "__main__":
-    main()
