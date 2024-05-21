@@ -1,18 +1,9 @@
 #!/usr/bin/node
 
 const fs = require('fs');
-const path = process.argv[2];
 
-if (!path) {
-  console.error('Please provide a file path as the first argument.');
-  process.exit(1);
-}
-
-fs.writeFile(path, 'utf-8', (error, data) => {
+fs.writeFile(process.argv[2], process.argv[3], 'utf-8', (error) => {
   if (error) {
     console.error(error);
-  }
-  else {
-    console.log(data);
   }
 });
