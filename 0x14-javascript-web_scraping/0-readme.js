@@ -8,10 +8,11 @@ if (!path) {
   process.exit(1);
 }
 
-fs.readFile(path, 'utf-8', (err, data) => {
-  if (err) {
-    console.error(err);
-  } else {
+fs.readFile(path, 'utf-8', (error, data) => {
+  if (error) {
+    console.error(error);
+  }
+  else {
     console.log(data);
   }
 });
