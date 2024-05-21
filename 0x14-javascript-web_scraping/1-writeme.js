@@ -8,7 +8,7 @@ if (!path) {
   process.exit(1);
 }
 
-fs.readFile(path, 'utf-8', (error, data) => {
+fs.writeFile(path, 'utf-8', (error, data) => {
   if (error) {
     console.error(error);
   }
