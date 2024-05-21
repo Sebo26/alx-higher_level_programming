@@ -1,11 +1,18 @@
 #!/usr/bin/node
-async function populate() {
-  const requestURL;
-  const request = new Request(requestURL);
 
-  const response = await fetch(request);
-  if (!response.ok) {
-	console.log('doesn't exist');
-  const superHeroes = await response.json(utf-8);
-  }
+const fs = require('fs');
+const path = process.argv[2];
+
+if (!path) {
+  console.error('Please provide a file path as the first argument.');
+  process.exit(1);
 }
+
+fs.readFile(path, 'utf-8', (err, data) => {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log(data);
+  }
+});
+
